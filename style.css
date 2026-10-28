@@ -63,7 +63,10 @@ main {
   border-radius: 8px;
 
 }
- 
+ .members li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+}
 footer {
 
   text-align: center;
