@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập - Team Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Team Demo</h1>
+<nav><a href="index.html">Home</a></nav>
+</header>
+ 
+  <main>
+<h2>Đăng nhập</h2>
+<form id="login-form">
+<label for="username">Tên đăng nhập</label>
+<input type="text" id="username" name="username" required>
+ 
+      <label for="password">Mật khẩu</label>
+<input type="password" id="password" name="password" required>
+ 
+      <button type="submit">Đăng nhập</button>
+</form>
+<p id="login-message"></p>
+</main>
+ 
+  <footer>
+<p>Demo Git - FPT Software</p>
+</footer>
+ 
+  <script>
+
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+
+      e.preventDefault();
+
+      const user = document.getElementById("username").value;
+
+      document.getElementById("login-message").textContent = "Xin chào, " + user + "!";
+
+    });
+</script>
+</body>
+</html>
+ 
